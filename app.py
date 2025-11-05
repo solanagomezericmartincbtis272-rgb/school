@@ -6,7 +6,7 @@ import os
 app = Flask(__name__, template_folder='flask_mongo_crud_alumnos/templates')
 app.secret_key = os.environ.get("FLASK_SECRET", "dev-secret")
 
-MONGO_URI = os.environ.get("MONGO_URI", "mongodb+srv://solanaeric93_db_user:74ijJFL3GSQjVIpM@school.ki2fjx2.mongodb.net/")
+MONGO_URI = os.environ.get("MONGO_URI", "mongodb+srv://solanaeric93_db_user:74ijJFL3GSQjVIpM@school.ki2fjx2.mongodb.net/school")
 client = MongoClient(MONGO_URI)
 db = client.get_default_database()
 
